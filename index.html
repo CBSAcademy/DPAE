@@ -26,12 +26,12 @@
   .nav-btn.disabled { background:#3a4560; color:rgba(255,255,255,.4); pointer-events:none; }
 
   /* Verrouillage temporaire du bouton Suivant : desactive au depart, puis */
-  /* pointer-events repasse a "auto" apres 8s via animation CSS. */
+  /* pointer-events repasse a "auto" apres 6s via animation CSS. */
   .nav-btn.next:not(.disabled) {
     pointer-events:none;
     opacity:.45;
     animation: unlockNext 0s forwards;
-    animation-delay: 8s;
+    animation-delay: 6s;
   }
   @keyframes unlockNext {
     to { pointer-events:auto; opacity:1; }
